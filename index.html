@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/output.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/ec46b80c81.css"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Francisco Perez - Portfolio</title>
+    <style>
+      .stock-ticker{
+        padding-block: 8px;
+      }
+      .stock-ticker ul{
+        flex-shrink: 0;
+        animation: scroll 60s linear infinite;
+      }
+      @keyframes scroll{
+        to {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+      <div class="stock-ticker flex gap-8 overflow-hidden select-none mt-[30vh] oswald-400">
+        <ul class="flex justify-between gap-[20vh] items-center min-w-full text-[30vh]">
+          <li>
+            <span>FRANCISCO</span>
+            
+          </li>
+          <li>
+            <span>PEREZ</span>
+          </li>
+          <li>
+            <span>FRANCISCO</span>
+            
+          </li>
+          <li>
+            <span>PEREZ</span>
+          </li>
+          <li>
+            <span>FRANCISCO</span>
+            
+          </li>
+          <li>
+            <span>PEREZ</span>
+          </li>     
+        </ul>
+        <ul aria-hidden="true" class="flex justify-between gap-[20vh] items-center min-w-full text-[30vh]">
+          <li>
+            <span>FRANCISCO</span>
+            
+          </li>
+          <li>
+            <span>PEREZ</span>
+          </li>
+          <li>
+            <span>FRANCISCO</span>
+            
+          </li>
+          <li>
+            <span>PEREZ</span>
+          </li>
+          <li>
+            <span>FRANCISCO</span>
+            
+          </li>
+          <li>
+            <span>PEREZ</span>
+          </li> 
+        </ul>
+      </div>
+    </div>
+    <div class="h-screen w-screen">
+      <div class="m-5 rounded-xl h-20 text-xl bg-white flex justify-between afacad-700" >
+        <div class="m-2 ml-6"><img src="img/forg.png" class="h-full" alt=""></div>
+        <div class="flex items-center gap-4 ">
+          <a class="hover:text-black text-zinc-400 duration-300" href="#AboutMe">ABOUT ME</a>
+          <a class="hover:text-black text-zinc-400 duration-300" href="#Experience">EXPERIENCE</a>
+          <a class="hover:text-black text-zinc-400 duration-300" href="#Proyects">PROYECTS</a>
+        </div>
+        <div class="flex items-center m-2 mr-6 border-4 rounded-xl hover:border-black border-zinc-400 text-black duration-300">
+          <a href="#GiT" class="p-2">GET IN TOUCH</a>
+        </div>
+      </div>
+    </div>
+    <div class="h-screen w-screen bg-orange-400">
+      hola
+    </div>
+    
+    
+  </body>
+</html>
