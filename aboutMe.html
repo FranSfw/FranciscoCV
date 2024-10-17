@@ -36,39 +36,48 @@
   <body>
     <div class="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
     <div class="h-screen w-screen">
-      <div
-        class="h-20 text-xl bg-white flex justify-between afacad-700 mb-[7vh]"
-      >
+      <div class=" h-20 text-xl bg-white flex justify-between afacad-700" >
         <div class="m-2 ml-6">
-          <a href="index.html"
-            ><img src="img/forg.png" class="h-full" alt=""
-          /></a>
+          <a href="index.html"><img src="img/forg.png" class="h-full" alt=""> </a>
         </div>
-
         <div class="flex items-center gap-4">
-          <a class="hover:text-black text-zinc-400 duration-300" 
-            href="aboutMe.html"
-            >ABOUT ME</a
-          >
-          <a
-            class="hover:text-black text-zinc-400 duration-300"
-            href="experience.html"
-            >EXPERIENCE</a
-          >
-          <a
-            class="hover:text-black text-zinc-400 duration-300"
-            href="proyects.html"
-            >PROYECTS</a
-          >
+          <span> </span>
+          <span> </span>
+          <span> </span>
+          <a class="hover:text-black text-zinc-400 duration-300" href="aboutMe.html">ABOUT ME</a>
+          <a class="hover:text-black text-zinc-400 duration-300" href="experience.html">EXPERIENCE</a>
+          <a class="hover:text-black text-zinc-400 duration-300" href="proyects.html">PROYECTS</a>
         </div>
-        <div
-          class="flex items-center m-2 mr-6 border-4 rounded-xl hover:border-black border-zinc-400 text-black duration-300"
-        >
+        <div class="flex items-center m-2 mr-13 border-4 rounded-xl hover:border-black border-zinc-400 text-black duration-300">
           <a href="getInTouch.html" class="p-2">GET IN TOUCH</a>
         </div>
       </div>
-      <h1 class="oswald-600 text-[8vh] text-center">About Me</h1>
-      
+      <h1 class="oswald-600 text-[8vh] text-center mb-[4vh]">About Me</h1>
+      <div class="grid grid-cols-2 place-content-center">
+        <div class="text-center grid place-content-center relative justify-center align-middle">
+          <span id="playButton" class="z-40 absolute text-[8vh] grid place-content-center right-[45%] top-[40%]">
+            <i class="fa-sharp fa-solid fa-play" style="color: #ffffff;"></i>
+          </span>
+          <video id="videoMe" class="w-[85vh] justify-center z-20 rounded-2xl" poster="img/macbook.avif">
+            <source src="media/African Bull Frog ant crusher.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="text-center grid place-content-center inter-400 text-xl m-10">
+          <div class="text-start mb-7 w-[80%]">
+            I am a young individual who seeks and takes advantage of opportunities to excel in various areas. My main strengths lie in front-end development and prototyping in Figma. I also have experience building large-scale websites using Jinja and Django, leveraging templates and integrating with databases. I enjoy collaborating in teams, learning from others, and contributing to their growth whenever possible.
+          </div>
+          <div>
+            <h1 class="text-start oswald-600 mb-4 text-3xl">Spoken languages:</h1>
+            <ul class="flex justify-around items-center">
+              <li class="">English</li>
+              <li>Spanish</li>
+              <li>German</li>
+              <li>French</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="js/custom.js"></script>
   </body>
 </html>
