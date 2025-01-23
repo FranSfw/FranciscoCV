@@ -33,28 +33,56 @@
       }
          
     </style>
+    <script src="./js/custom.js"></script>
+
   </head>
   <body>
     <div
       class="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
     ></div>
     <div class="h-screen w-screen">
-      <div class=" h-20 text-xl bg-white flex justify-between afacad-700" >
-        <div class="m-2 ml-6">
-          <a href="index.html"><img src="img/forg.png" class="h-full" alt=""> </a>
-        </div>
-        <div class="flex items-center gap-4">
-          <span> </span>
-          <span> </span>
-          <span> </span>
-          <a class="hover:text-black text-zinc-400 duration-300" href="aboutMe.html">ABOUT ME</a>
-          <a class="hover:text-black text-zinc-400 duration-300" href="experience.html">EXPERIENCE</a>
-          <a class="hover:text-black text-zinc-400 duration-300" href="projects.html">PROJECTS</a>
-        </div>
-        <div class="flex items-center m-2 mr-13 border-4 rounded-xl hover:border-black border-zinc-400 text-black duration-300">
-          <a href="getInTouch.html" class="p-2">GET IN TOUCH</a>
-        </div>
-      </div>
+      <header class="">
+        <nav class="flex justify-between h-20 text-xl bg-white afacad-700">
+          <div class="flex" id="logoDiv">
+            <a href="index.html" class="p-2">
+              <img
+                src="img/forg1.png"
+                alt=""
+                style="width: 60px; height: 60px"
+              />
+            </a>
+          </div>
+          <ul class="flex items-center gap-4">
+            <li>
+              <a
+                class="hover:text-[#042254] text-zinc-400 duration-300"
+                href="aboutMe.html"
+                >ABOUT ME</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-[#042254] text-zinc-400 duration-300"
+                href="experience.html"
+                >EXPERIENCE</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-[#042254] text-zinc-400 duration-300"
+                href="projects.html"
+                >PROJECTS</a
+              >
+            </li>
+          </ul>
+          <div
+            id="getInTouchDiv"
+            class="flex items-center m-2 mr-13 border-4 rounded-xl hover:border-[#042254] border-zinc-400 text-black duration-300"
+          >
+            <a href="getInTouch.html" class="p-2">GET IN TOUCH</a>
+          </div>
+        </nav>
+      </header>
       <h1 class="oswald-600 text-[8vh] text-center">Most Recent Projects</h1>
       <div class="max-w-[70%] grid grid-cols-5 inter-400 " style="margin: 0 auto;">
         <div class="col-span-2 place-items-end">
