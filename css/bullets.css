@@ -1,0 +1,6 @@
+.swiper-pagination-bullet {
+  @apply bg-zinc-400 hover:bg-[#042254] duration-300;
+}
+.swiper-pagination-bullet-active {
+  @apply bg-[#042254];
+}

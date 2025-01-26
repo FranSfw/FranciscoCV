@@ -17,24 +17,14 @@
       href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title>Francisco Perez - Get In Touch</title>
-    <style>
-      .stock-ticker {
-        padding-block: 8px;
-      }
-      .stock-ticker ul {
-        flex-shrink: 0;
-        animation: scroll 60s linear infinite;
-      }
-      @keyframes scroll {
-        to {
-          transform: translateX(-100%);
-        }
-      }
-         
-    </style>
+    <link rel="stylesheet" href="css/bullets.css" />
     <script src="./js/custom.js"></script>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div
@@ -79,35 +69,63 @@
           </div>
         </nav>
       </header>
-      <h1 class="oswald-600 text-[8vh] text-center">Most Recent Projects</h1>
-      <div class="max-w-[70%] grid grid-cols-5 inter-400 " style="margin: 0 auto;">
-        <div class="col-span-2 place-items-end">
-          <div class="h-[20vh]">
-            <img class="h-full m-3" src="img/Pestaneo.jpg" alt="">
+      
+      <h1 class="oswald-600 text-[8vh] text-center mt-[2vh] mb-[2vh]">Most Recent Projects</h1>
+      <div class="swiper-container overflow-hidden max-w-[80%] m-auto">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h1 class="inter-500 text-center text-4xl">Pestañeo</h1>
+            <img
+              class="h-[300px] my-4 flex m-auto"
+              src="img/Pestaneo.jpg"
+              alt="Pestañeo"
+            />
+            <p class="text-center max-w-[80%] m-auto">
+              "Pestañeo" offers a user-friendly system for clients to register
+              and sign documents digitally using a tablet. It also simplifies
+              the appointment booking process, providing a more convenient and
+              up-to-date scheduling experience.
+            </p>
           </div>
-          <div class="h-[20vh]">
-            <img class="h-full m-3" src="img/Revistas.jpg" alt="">
+          <div class="swiper-slide">
+            <h1 class="inter-500 text-center text-4xl">Magazines Page</h1>
+            <img
+              class="h-[300px] my-4 flex m-auto"
+              src="img/Revistas.jpg"
+              alt="Magazines Page"
+            />
+            <p class="text-center max-w-[80%] m-auto">
+              Academia Unbound is a centralized database that collects academic
+              articles from multiple online sources, making them easily
+              accessible in a single location. Users can refine their search
+              using filters and are then guided to the original articles.
+            </p>
           </div>
-          <div class="h-[20vh]">
-            <img class="h-full m-3" src="img/Thrifty.jpg" alt="">
+          <div class="swiper-slide">
+            <h1 class="inter-500 text-center text-4xl">Thrifty Admin</h1>
+            <img
+              class="h-[300px] my-4 flex m-auto"
+              src="img/Thrifty.jpg"
+              alt="Thrifty Admin"
+            />
+            <p class="text-center max-w-[80%] m-auto">
+              Thrifty ice cream branches in Puerto Peñasco can use this platform
+              to streamline their employee administration. It automates the
+              process of registering new staff and creating the necessary
+              paperwork.
+            </p>
           </div>
         </div>
-        <div class="col-span-3 max-w-[70%]" style="margin: 0 auto">
-          <div class="h-[20vh]">
-            <p class=" m-3">
-              <h1 class="inter-700">Pestañeo</h1>
-              "Pestañeo" offers a user-friendly system for clients to register and sign documents digitally using a tablet. It also simplifies the appointment booking process, providing a more convenient and up-to-date scheduling experience            </p>          </div>
-          <div class="h-[20vh]">
-            <p class=" m-3">
-              <h1 class="inter-700">Magazines Page</h1>
-              Academia Unbound is a centralized database that collects academic articles from multiple online sources, making them easily accessible in a single location. Users can refine their search using filters and are then guided to the original articles.            </p>          </div>
-          <div class="h-[20vh]">
-            <p class=" m-3">
-              <h1 class="inter-700">Thrifty Admin</h1>
-              Thrifty ice cream branches in Puerto Peñasco can use this platform to streamline their employee administration. It automates the process of registering new staff and creating the necessary paperwork            </p>          </div>
-        </div>
+        <div class="swiper-pagination"></div>
+        <div
+          class="swiper-button-next text-zinc-400 hover:text-[#042254] duration-300"
+        ></div>
+        <div
+          class="swiper-button-prev text-zinc-400 hover:text-[#042254] duration-300"
+        ></div>
       </div>
-      <span class="mb-[10vh]"> <br><br><br><br><br><br></span>
+      <!-- <span class="mb-[10vh]"></span> -->
     </div>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
