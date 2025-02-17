@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/output.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/test.css" />
+
+
     <link
       rel="stylesheet"
       href="https://kit.fontawesome.com/ec46b80c81.css"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,13 +47,31 @@
     ></div>
     <div class="h-screen w-screen">
       <header class="">
-        <nav class="flex justify-between h-20 text-xl bg-white afacad-700">
-          <div class="flex" id="logoDiv">
+        <nav
+          class="flex justify-between h-20 text-xl bg-white afacad-700 z-30"
+          id="nav"
+        >
+          <div class="flex justify-between w-screen sm:w-auto sm:pr-8" id="logoDiv">
             <a href="index.html" class="p-2 px-4 grid place-content-center">
-              <span class="oswald-400 text-4xl font-semibold">Frann</span>
+              <span id="textLogo" class="oswald-400 text-4xl font-semibold"
+                >Frann</span
+              >
             </a>
+            <div class="grid place-content-center p-6" id="mobileMenu">
+              <i class="fa-sharp fa-solid fa-bars text-2xl"></i>
+            </div>
+            <div id="mobileMenuContent">
+              <ul class="flex flex-col items-center gap-4 p-4">
+                <li><a href="index.html"><div class="w-screen flex justify-center">HOME</div></a></li>
+                <li><a href="aboutMe.html"><div class="w-screen flex justify-center">ABOUT ME</div></a></li>
+                <li><a href="experience.html"><div class="w-screen flex justify-center">EXPERIENCE</div></a></li>
+                <li><a href="projects.html"><div class="w-screen flex justify-center">PROJECTS</div></a></li>
+                <li><a href="getInTouch.html"><div class="w-screen flex justify-center">GET IN TOUCH</div></a></li>
+              </ul>
+            </div>
+            <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-20" onclick="salirOverlay()"></div>
           </div>
-          <ul class="flex items-center gap-4">
+          <ul class="flex items-center gap-4" id="navUl">
             <li>
               <a
                 class="hover:text-[#042254] text-zinc-400 duration-300"
@@ -69,17 +94,18 @@
               >
             </li>
           </ul>
-          <div
-            id="getInTouchDiv"
+          <div id="getInTouchDiv"
             class="flex items-center m-2 mr-13 border-4 rounded-xl hover:border-[#042254] border-zinc-400 text-black duration-300"
           >
-            <a href="getInTouch.html" class="p-2">GET IN TOUCH</a>
+            <a href="getInTouch.html" class="p-2 justify-center m-0">GET IN TOUCH</a>
           </div>
+
         </nav>
+
       </header>
       <div class="grid grid-cols-2 mt-[8vh]">
         <div class="text-center grid place-content-center">
-          <h1 class="oswald-600 text-[10vh]">Get In Touch</h1>
+          <h1 class="oswald-600 text-[8vh]">Let's Work Together!</h1>
           <h2 class="inter-500 text-[2.5vh] mt-3">
             CSI PRO | 5J - 205, Universidad de Sonora
           </h2>
@@ -112,9 +138,9 @@
             <a target="_blank" href="media/FranciscoCV.pdf">My Resume</a>
           </h4>
         </div>
-        <div class="text-center grid place-content-center">
+        <div class="text-center grid place-content-center ">
           <iframe
-            class="w-[70vh] h-[70vh]"
+            class="w-[50vh] h-[50vh] max-w-[90%] max-h-[90%]"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d290.3249161550609!2d-110.96320505536963!3d29.081733508399154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ce85f8dbf2b251%3A0xe61c755a6c9aff36!2sEDIFICIO%205J%20-%20DEPTO.%20INGENIER%C3%8DA%20INDUSTRIAL!5e0!3m2!1ses-419!2smx!4v1729101266881!5m2!1ses-419!2smx"
             style="border: 0"
             allowfullscreen=""
