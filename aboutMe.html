@@ -68,7 +68,7 @@
   </head>
   <body>
     <div
-      class="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+      class="absolute top-0 z-[-2] h-screen w-screen bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
     ></div>
     <div class="h-screen w-screen">
       <header class="">
@@ -131,30 +131,32 @@
       <h1 class="oswald-600 text-[8vh] text-center mt-[2vh] mb-[2vh]">
         About Me
       </h1>
-      <div class="grid grid-cols-2 place-content-center max-w-[90%] m-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 place-content-center max-w-[90%] m-auto">
         <div class="grid place-content-center">
           <div>
             <img
               src="./img/Fran2.jpg"
               alt=""
               class="rounded-full w-3/4 m-auto"
+              draggable="false"
             />
           </div>
         </div>
         <div
-          class="text-center grid place-content-center inter-400 text-xl m-10"
+          class="text-center grid place-content-center inter-400 text-xl"
         >
-          <div class="text-start mb-3 w-[80%]">
+          <div class="sm:text-start text-justify mb-3 sm:w-[80%] w-[90%] m-auto sm:m-0 pt-8">
             I am a front-end developer who seeks and takes advantage of
-            opportunities to excel in various areas. My main strengths lie in
+            opportunities to excel in various areas.  
+            My main strengths are
             front-end development and prototyping in Figma. I also have
-            experience building large-scale websites using Jinja and Django,
+            experience in building large-scale websites using Jinja and Django,
             leveraging templates and integrating with databases. I enjoy
             collaborating in teams, learning from others, and contributing to
             their growth whenever possible.
           </div>
           <div
-            class="stock-ticker-container relative overflow-hidden max-w-[80%] p-2"
+            class="stock-ticker-container relative overflow-hidden sm:max-w-[80%] max-w-[90%] p-2"
           >
             <div
               class="stock-ticker flex gap-[6vh] overflow-hidden select-none mt-[.5vh] mb-[.5vh] oswald-400"
@@ -328,16 +330,15 @@
               class="fade-right absolute top-0 right-0 h-full w-1/12 bg-gradient-to-l from-white to-transparent pointer-events-none"
             ></div>
           </div>
-          <div>
+          <div class="mb-10 sm:mb-0 ml-5 sm:ml-0"> 
             <h1 class="text-start oswald-600 mb-4 text-3xl">
               Spoken languages:
             </h1>
-            <ul class="flex justify-around items-center max-w-[70%]">
-              <li>English</li>
-              <li>Spanish</li>
-              <li>Deutsch</li>
-              <li>French</li>
-            </ul>
+            <ul class="text-start sm:flex">
+              <li class="mb-2 ml-2">Spanish - Native</li>
+              <li class="mb-2 ml-2">English - Advanced</li>
+              <li class="mb-2 ml-2">French - Elementary</li>
+              <li class="mb-2 ml-2">German - Elementary</li>
           </div>
         </div>
       </div>

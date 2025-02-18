@@ -606,16 +606,8 @@ video {
   z-index: -2;
 }
 
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-
 .m-0 {
   margin: 0px;
-}
-
-.m-10 {
-  margin: 2.5rem;
 }
 
 .m-2 {
@@ -629,6 +621,19 @@ video {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .mb-3 {
@@ -649,6 +654,14 @@ video {
 
 .mb-\[2vh\] {
   margin-bottom: 2vh;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
 }
 
 .mt-12 {
@@ -679,8 +692,24 @@ video {
   margin-top: 8vh;
 }
 
-.mt-\[8vw\] {
-  margin-top: 8vw;
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mb-\[\] {
+  margin-bottom: ;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-\[1vh\] {
+  margin-bottom: 1vh;
 }
 
 .flex {
@@ -707,8 +736,8 @@ video {
   height: 300px;
 }
 
-.h-\[70vh\] {
-  height: 70vh;
+.h-\[50vh\] {
+  height: 50vh;
 }
 
 .h-full {
@@ -719,8 +748,20 @@ video {
   height: 100vh;
 }
 
-.h-\[50vh\] {
-  height: 50vh;
+.h-\[screen\] {
+  height: screen;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[90\] {
+  height: 90;
+}
+
+.h-\[90vh\] {
+  height: 90vh;
 }
 
 .max-h-\[90\%\] {
@@ -739,12 +780,12 @@ video {
   width: 75%;
 }
 
-.w-\[0vh\] {
-  width: 0vh;
+.w-\[50vh\] {
+  width: 50vh;
 }
 
-.w-\[80\%\] {
-  width: 80%;
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .w-auto {
@@ -759,28 +800,16 @@ video {
   width: 100vw;
 }
 
-.w-\[50vh\] {
-  width: 50vh;
+.w-\[screen\] {
+  width: screen;
 }
 
-.w-\[70vh\] {
-  width: 70vh;
+.w-\[90\] {
+  width: 90;
 }
 
-.w-\[0\%\] {
-  width: 0%;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[s\] {
-  width: s;
-}
-
-.w-\[sc\] {
-  width: sc;
+.w-\[90vh\] {
+  width: 90vh;
 }
 
 .min-w-full {
@@ -817,12 +846,8 @@ video {
           user-select: none;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -843,10 +868,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
 }
 
 .gap-4 {
@@ -957,8 +978,16 @@ video {
   padding-bottom: 5rem;
 }
 
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .text-start {
@@ -982,10 +1011,6 @@ video {
 
 .text-\[1\.5rem\] {
   font-size: 1.5rem;
-}
-
-.text-\[10vh\] {
-  font-size: 10vh;
 }
 
 .text-\[2\.5vh\] {
@@ -1013,8 +1038,12 @@ video {
   line-height: 1.75rem;
 }
 
-.text-\[10vw\] {
-  font-size: 10vw;
+.text-\[6vh\] {
+  font-size: 6vh;
+}
+
+.text-\[7vh\] {
+  font-size: 7vh;
 }
 
 .font-semibold {
@@ -1031,9 +1060,19 @@ video {
   color: rgb(3 105 161 / var(--tw-text-opacity, 1));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
 .text-zinc-400 {
   --tw-text-opacity: 1;
   color: rgb(161 161 170 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#042254\] {
+  --tw-text-opacity: 1;
+  color: rgb(4 34 84 / var(--tw-text-opacity, 1));
 }
 
 .duration-300 {
@@ -1051,8 +1090,61 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .sm\:m-0 {
+    margin: 0px;
+  }
+
+  .sm\:m-auto {
+    margin: auto;
+  }
+
+  .sm\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .sm\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .sm\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:h-\[300px\] {
+    height: 300px;
+  }
+
+  .sm\:max-h-\[300px\] {
+    max-height: 300px;
+  }
+
+  .sm\:w-\[80\%\] {
+    width: 80%;
+  }
+
   .sm\:w-auto {
     width: auto;
+  }
+
+  .sm\:max-w-\[80\%\] {
+    max-width: 80%;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .sm\:pb-0 {
@@ -1061,5 +1153,13 @@ video {
 
   .sm\:pr-8 {
     padding-right: 2rem;
+  }
+
+  .sm\:text-center {
+    text-align: center;
+  }
+
+  .sm\:text-start {
+    text-align: start;
   }
 }
